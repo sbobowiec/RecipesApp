@@ -1,0 +1,38 @@
+<!--
+  ~ Copyright (c) 2016. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipesActivity"
+    android:background="@color/secondary_background_color">
+
+    <!-- used for preventing edit text from gaining focus on activity startup  -->
+    <LinearLayout
+        android:id="@+id/dummy_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <EditText
+        android:id="@+id/recipe_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/recipe_search_view_padding"
+        android:layout_margin="@dimen/recipe_search_view_margin"
+        android:hint="@string/search"
+        android:drawableEnd="@drawable/search_icon_30"
+        android:background="@drawable/recipe_search_view_shape" />
+
+    <ListView
+        android:id="@+id/recipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipe_search_view" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Godt</string>
+
+    <string name="loading_recipes">Laster Vennligst vent</string>
+    <string name="updating_recipes">Oppdatering av data</string>
+    <string name="recipe_image_content_description">Oppskrift bilde</string>
+    <string name="ingredients">Ingredienser:</string>
+    <string name="search">Søk oppskrifter</string>
+    <string name="refresh">Forfriske</string>
+    <string name="refresh_data">Oppdatere data</string>
+
+</resources>
